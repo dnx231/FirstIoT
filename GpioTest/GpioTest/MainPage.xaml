@@ -9,10 +9,10 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="GpioTest App" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <CheckBox Content="Channel 1" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Tag="1" Checked="CheckBox_Checked"/>
-        <CheckBox Content="Channel 2" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Tag="2" Checked="CheckBox_Checked"/>
-        <CheckBox Content="Channel 3" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Tag="3" Checked="CheckBox_Checked"/>
-        <CheckBox Content="Channel 4" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Tag="4" Checked="CheckBox_Checked"/>
+        <CheckBox Content="Channel 1" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Tag="1" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Channel 2" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Tag="2" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Channel 3" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Tag="3" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Channel 4" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Tag="4" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
 
     </Grid>
 </Page>

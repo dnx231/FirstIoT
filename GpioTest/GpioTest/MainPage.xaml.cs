@@ -53,10 +53,17 @@ namespace GpioTest
             int channelNumber = Int32.Parse(cbCurrent.Tag.ToString()) - 1;
             if (_gpioConnected)
             {
-                if (cbCurrent.IsChecked == true)
-                    _pins[channelNumber].Write(GpioPinValue.High);
-                else
-                    _pins[channelNumber].Write(GpioPinValue.Low);
+                _pins[channelNumber].Write(GpioPinValue.High);
+            }
+        }
+
+        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            CheckBox cbCurrent = (CheckBox)sender;
+            int channelNumber = Int32.Parse(cbCurrent.Tag.ToString()) - 1;
+            if (_gpioConnected)
+            {
+                _pins[channelNumber].Write(GpioPinValue.Low);
             }
         }
     }
